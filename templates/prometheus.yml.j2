@@ -9,6 +9,6 @@ rule_files:
 
 scrape_configs:
   - job_name: 'prometheus'
-    scrape_interval: 5s
+    scrape_interval: {{ scap_intveral }}
     static_configs:
       - targets: ['localhost:9090']
